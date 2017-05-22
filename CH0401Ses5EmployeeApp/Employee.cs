@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CH0401Ses5EmployeeApp
 {
-    public class Employee
+    public abstract class Employee
     {
         private string empName;
         public string Name
