@@ -6,7 +6,10 @@ namespace CH0401Ses5BasicInheritance
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car c = new Car(80);
+            c.Speed = 50;
+            Console.WriteLine("My car is going {0} MPH.", c.Speed);
+            Console.ReadLine();
         }
     }
 }

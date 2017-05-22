@@ -14,5 +14,22 @@ namespace CH0401Ses5EmployeeApp
             get;
             set;
         }
+        public override void DisplayStatus()
+        {
+            base.DisplayStatus();
+            Console.WriteLine("Number of sales {0}", NumberOfSales);
+        }
+        public override void GiveBonus(float amount)
+        {
+            int saleBonus =0;
+            if (NumberOfSales >= 0 && NumberOfSales <= 100){
+                saleBonus = 10;
+            }else if (NumberOfSales >= 101 && NumberOfSales <= 200) {
+                saleBonus = 15;
+            }else{
+                saleBonus = 20;
+            }
+            base.GiveBonus(amount*saleBonus);
+        }
     }
 }

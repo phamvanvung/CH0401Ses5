@@ -37,6 +37,8 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="SalesPerson.cs" />
+    <Compile Include="PTSalesPerson.cs" />
+    <Compile Include="EmptyClass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

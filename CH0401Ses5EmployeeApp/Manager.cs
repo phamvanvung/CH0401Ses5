@@ -8,12 +8,25 @@ namespace CH0401Ses5EmployeeApp
             : base( name, id, pay, age, ssn)
         {
             StockOptions = stockOptions;
+
         }
 
         public int StockOptions
         {
             get;
             set;
+        }
+
+        public override void DisplayStatus()
+        {
+            base.DisplayStatus();
+            Console.WriteLine("Stock Options: {0}", StockOptions);
+        }
+        public override void GiveBonus(float amount)
+        {
+            base.GiveBonus(amount);
+            Random r = new Random();
+            StockOptions += r.Next(500);
         }
     }
 }

@@ -58,14 +58,14 @@ namespace CH0401Ses5EmployeeApp
             : this(name, id, pay, 0, "")
         {
         }
-        public void DisplayStatus(){
+        public virtual void DisplayStatus(){
             Console.WriteLine("Name: {0}", Name);
             Console.WriteLine("ID: {0}", ID);
             Console.WriteLine("Pay: {0}", Pay);
             Console.WriteLine("Age: {0}", Age);
             Console.WriteLine("SSN: {0}", SSN);
         }
-        public void GiveBonus(float amount){
+        public virtual void GiveBonus(float amount){
             Pay += amount;
         }
     }
